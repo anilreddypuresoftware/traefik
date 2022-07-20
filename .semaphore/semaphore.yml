@@ -34,6 +34,7 @@ blocks:
     task:
       jobs:
         - name: Test Integration
+          matrix:
           - env_var: ARCH
             values: [ "arm64", "amd64" ]
           commands:
